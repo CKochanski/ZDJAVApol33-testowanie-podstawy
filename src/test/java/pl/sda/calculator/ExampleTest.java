@@ -29,6 +29,7 @@ class ExampleTest {
     }
 
     @Test
+    @DisplayName("Powinno zwrocic 5 przy dodawaniu 2 do 3")
     void shouldReturnFiveForGivenArgumentsOnAdditionOperation() {
         //given
         int arg1 = 2;
@@ -43,14 +44,13 @@ class ExampleTest {
 
     @Test
     @DisplayName("Powinno zwrocic 2 dla operacji odejmowania 10 od 12")
-    @Disabled("Test nie dziala, trzeba naprawic")
     void shouldReturnTwoForSubtractionOperation() {
         //given
         int arg1 = 12;
         int arg2 = 10;
 
         //when
-        int actual = arg1 + arg2;
+        int actual = arg1 - arg2;
 
         //then
         assertEquals(2, actual);
